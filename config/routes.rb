@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :products
-  root 'site#index' 
+  root 'site#index'  #only for the home page, nothing else
+  get '/about' => 'site#about'
 end
 
   # The priority is based upon order of creation: first created -> highest priority.
